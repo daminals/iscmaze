@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>Internet Safety Maze</title>
+<!-- write your code here -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+    <!-- Social Media Links -->
+    <meta property="og:title" content="isc-maze">
+    <meta property="og:description" content="Internet Safety Club Maze Game">
+    <meta property="og:image" content="/iscmaze.png">
+    <meta property="og:url" content="https://isc-maze.herokuapp.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="og:site_name" content="Internet Safety Club Maze">
+    <meta name="twitter:image:alt" content="Internet Safety Club Maze Game">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Internet Safety Club Maze Game">
+    <!-- Social Media Links -->
+
+
+<!-- write your code here -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [
+		{name:"maze_atlas_1", frames: [[306,681,616,216],[306,899,364,277],[672,1042,364,277],[1477,494,494,328],[805,0,670,679],[924,824,616,216],[0,0,803,631],[1477,0,406,492],[0,633,304,452],[0,1087,300,168],[1542,824,354,350]]},
+		{name:"maze_atlas_2", frames: [[0,999,1256,904],[0,0,1471,997]]},
+		{name:"maze_atlas_3", frames: [[1073,906,803,631],[0,0,1256,904],[0,906,1071,756]]}
+];
+(lib.AnMovieClip = function(){
+	this.actionFrames = [];
+	this.ignorePause = false;
+	this.gotoAndPlay = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndPlay.call(this,positionOrLabel);
+	}
+	this.play = function(){
+		cjs.MovieClip.prototype.play.call(this);
+	}
+	this.gotoAndStop = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndStop.call(this,positionOrLabel);
+	}
+	this.stop = function(){
+		cjs.MovieClip.prototype.stop.call(this);
+	}
+}).prototype = p = new cjs.MovieClip();
+// symbols:
+(lib.CachedBmp_17 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_16 = function() {
+	this.initialize(ss["maze_atlas_3"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_7 = function() {
+	this.initialize(img.CachedBmp_7);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,2170,1410);
+(lib.CachedBmp_6 = function() {
+	this.initialize(img.CachedBmp_6);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,2170,1410);
+(lib.CachedBmp_5 = function() {
+	this.initialize(ss["maze_atlas_2"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_4 = function() {
+	this.initialize(ss["maze_atlas_3"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_23 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_22 = function() {
+	this.initialize(ss["maze_atlas_3"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_21 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_20 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_13 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_15 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_14 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_19 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_18 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+(lib.CachedBmp_12 = function() {
+	this.initialize(ss["maze_atlas_2"]);
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+(lib.Bitmap2 = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+(lib.ScreenShot20210413at61823PM = function() {
+	this.initialize(ss["maze_atlas_1"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.winner = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.CachedBmp_17();
+	this.instance.setTransform(-141.65,-36.3,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_16();
+	this.instance_1.setTransform(-200.6,-157.6,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.winner, new cjs.Rectangle(-200.6,-157.6,401.5,315.5), null);
+(lib.startbutton = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.CachedBmp_4();
+	this.instance.setTransform(-218,-232.4,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_5();
+	this.instance_1.setTransform(-218,-232.4,0.5,0.5);
+	this.instance_2 = new lib.CachedBmp_6();
+	this.instance_2.setTransform(-472,-370.4,0.5,0.5);
+	this.instance_3 = new lib.CachedBmp_7();
+	this.instance_3.setTransform(-472.4,-371.6,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-472.4,-371.6,1085.4,706.2);
+(lib.prize = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {close:0,open:1};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.CachedBmp_21();
+	this.instance.setTransform(-101.95,-89.65,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_20();
+	this.instance_1.setTransform(-133.25,-108.95,0.5,0.5);
+	this.instance_2 = new lib.CachedBmp_23();
+	this.instance_2.setTransform(-101.95,-89.65,0.5,0.5);
+	this.instance_3 = new lib.CachedBmp_22();
+	this.instance_3.setTransform(-292.2,-203.95,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).to({state:[{t:this.instance_3},{t:this.instance_2}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-292.2,-203.9,535.5,378);
+(lib.maze_1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.CachedBmp_13();
+	this.instance.setTransform(-167.5,-169.65,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.maze_1, new cjs.Rectangle(-167.5,-169.6,335,339.5), null);
+(lib.loser = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.CachedBmp_15();
+	this.instance.setTransform(-141.65,-36.3,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_14();
+	this.instance_1.setTransform(-200.6,-157.6,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.loser, new cjs.Rectangle(-200.6,-157.6,401.5,315.5), null);
+(lib.goal = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {closed:0,"open":1};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Layer_1
+	this.instance = new lib.CachedBmp_18();
+	this.instance.setTransform(-80.25,-90.95,0.5,0.5);
+	this.instance_1 = new lib.CachedBmp_19();
+	this.instance_1.setTransform(-131.45,-110.95,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},1).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-131.4,-110.9,203.2,246);
+// stage content:
+(lib.maze = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	this.actionFrames = [0];
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		var _this = this;
+		stage.enableMouseOver(3);
+		// ------------------------- INITIALIZE VARIABLES --------------------
+		_this.goal1.stop();
+		_this.goal2.stop();
+		_this.goal3.stop();
+		_this.goal4.stop();
+		_this.goal5.stop();
+		var goal1_win = false;
+		var goal2_win = false;
+		var goal3_win = false;
+		var goal4_win = false;
+		var goal5_win = false;
+		// --------------------------------- WIN CONDITIONS --------------------
+		// goal 1
+		_this.goal1.on('mouseover', function(){
+		goal1_win = true;
+		});
+		// goal 2
+		_this.goal2.on('mouseover', function(){
+		goal2_win = true;
+		});
+		// goal 3
+		_this.goal3.on('mouseover', function(){
+		goal3_win = true;
+		});
+		// goal 4
+		_this.goal4.on('mouseover', function(){
+		goal4_win = true;
+		});
+		// goal 5
+		_this.goal5.on('mouseover', function(){
+		goal5_win = true;
+		if (goal1_win & goal2_win & goal3_win & goal4_win & goal5_win) {
+			_this.mazelol.visible = false;
+			_this.chickendinner.visible = true;
+			_this.goal1.visible = false;
+			_this.goal2.visible = false;
+			_this.goal3.visible = false;
+			_this.goal4.visible = false;
+			_this.goal5.visible = false;
+			}
+		});
+		// ---------------------------- UNLOCK / LOCK -----------------------------
+		// goal 1
+		_this.goal1.on('mouseover', function(){
+		_this.goal1.gotoAndStop('open');
+		});
+		// goal 2
+		_this.goal2.on('mouseover', function(){
+		_this.goal2.gotoAndStop('open');
+		});
+		// goal 3
+		_this.goal3.on('mouseover', function(){
+		_this.goal3.gotoAndStop('open');
+		});
+		// goal 4
+		_this.goal4.on('mouseover', function(){
+		_this.goal4.gotoAndStop('open');
+		});
+		// goal 5
+		_this.goal5.on('mouseover', function(){
+		_this.goal5.gotoAndStop('open');
+		});
+		stage.enableMouseOver(3);
+		var _this = this;
+		_this.start.on('click', function(){
+		_this.mazelol.visible = true;
+		_this.start.visible = false;
+		_this.goal1.visible = true;
+		_this.goal2.visible = true;
+		_this.goal3.visible = true;
+		_this.goal4.visible = true;
+		_this.goal5.visible = true;
+		});
+		var _this = this;
+		/*
+		Mousing over the specified symbol instance executes a function.
+		'3' is the number of the times event should be triggered.
+		*/
+		stage.enableMouseOver(3);
+		_this.mazelol.on('mouseover', function(){
+		/*
+		Makes the specified object visible or invisible.
+		*/
+		_this.mazelol.visible = false;
+		_this.lose.visible = true;
+		_this.goal1.visible = false;
+		_this.goal2.visible = false;
+		_this.goal3.visible = false;
+		_this.goal4.visible = false;
+		_this.goal5.visible = false;
+		});
+		var _this = this;
+		_this.goal1.visible = false;
+		_this.goal2.visible = false;
+		_this.goal3.visible = false;
+		_this.goal4.visible = false;
+		_this.goal5.visible = false;
+		_this.mazelol.visible = false;
+		_this.lose.visible = false;
+		_this.chickendinner.visible = false;
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	// goals
+	this.goal5 = new lib.prize();
+	this.goal5.name = "goal5";
+	this.goal5.setTransform(263.95,26.2,0.1555,0.1555,0,0,0,-9.7,-26.7);
+	this.goal4 = new lib.goal();
+	this.goal4.name = "goal4";
+	this.goal4.setTransform(208.15,123.65,0.1421,0.1421,0,0,0,-4.2,22.2);
+	this.goal2 = new lib.goal();
+	this.goal2.name = "goal2";
+	this.goal2.setTransform(357.8,176.95,0.1421,0.1421,0,0,0,-4.2,22.2);
+	this.goal3 = new lib.goal();
+	this.goal3.name = "goal3";
+	this.goal3.setTransform(168.45,270.7,0.1421,0.1421,0,0,0,-4.2,22.2);
+	this.goal1 = new lib.goal();
+	this.goal1.name = "goal1";
+	this.goal1.setTransform(416.25,216.15,0.1421,0.1421,0,0,0,-4.2,22.2);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.goal1},{t:this.goal3},{t:this.goal2},{t:this.goal4},{t:this.goal5}]}).wait(1));
+	// lose
+	this.lose = new lib.loser();
+	this.lose.name = "lose";
+	this.lose.setTransform(247.85,212);
+	this.timeline.addTween(cjs.Tween.get(this.lose).wait(1));
+	// win
+	this.chickendinner = new lib.winner();
+	this.chickendinner.name = "chickendinner";
+	this.chickendinner.setTransform(247.95,212);
+	this.timeline.addTween(cjs.Tween.get(this.chickendinner).wait(1));
+	// start_button
+	this.start = new lib.startbutton();
+	this.start.name = "start";
+	this.start.setTransform(55.05,345.2,0.2061,0.2061);
+	new cjs.ButtonHelper(this.start, 0, 1, 2, false, new lib.startbutton(), 3);
+	this.timeline.addTween(cjs.Tween.get(this.start).wait(1));
+	// maze_ong
+	this.mazelol = new lib.maze_1();
+	this.mazelol.name = "mazelol";
+	this.mazelol.setTransform(278.15,200.75);
+	this.timeline.addTween(cjs.Tween.get(this.mazelol).wait(1));
+	// MergedLayer_1
+	this.instance = new lib.CachedBmp_12();
+	this.instance.setTransform(-73.1,-68.9,0.5,0.5);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	// bg0img
+	this.instance_1 = new lib.Bitmap2();
+	this.instance_1.setTransform(-21,0,2.0503,2.4301);
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#000000").s().p("ABmFfIgHgIIgFgIIgDgHIgIgIIgFgHIgFgHIgCgIIgDgIIgFgHIgFgIIgFgHIgDgHIgFgIIgCgIIgDgIIgFgHIgCgIIgDgHIAAgHIgFgIIgDgIIgCgHIgDgIIgFgHIgCgHIgDgIIgEgIIgCgIIAAgHIgDgHIgFgIIgDgHIgCgIIgFgIIgDgHIgCgHIgDgIIgCgHIgDgIIAAgIIgFgIIgDgHIgCgHIAAgIIgDgIIgFgHIgHgHIgGgHIgCgHIgDgIIgFgIIgFgHIgCgIIgDgIIAAgHIgFgHIgCgIIgDgIIACgHIgCgIIgKgHIgIgHIgHgIIgKgIIgDgHIgDgIIAAgHIAAgHIAAgIIAAgIIAAgIIAAgHIAAgHIAAgIIAAgHIAAgIIAAgIIAAgIIAAgHIAAgHIAAgIIAAgIIAAgHIAAgIIAAgHIAAgHIAAgIIAAgIIAAgIIAAgHIAAgIIACgHIAFgHIANgDIAFAAIAKAHIACAIIADAHIAAAIIAAAIIAAAHIAAAHIAAAIIAAAHIAAAJIAAAHIAAAIIAAAHIAAAHIAAAIIAAAIIAAAHIAAAIIAAAHIAAAIIAAAHIAAAIIABAIIAAAHIAAAHIACAIIAIAHIAKAIIAHAIIAFAHIAGAHIACAIIADAIIAAAHIgDAIIADAIIACAHIADAHIACAIIAIAHIAFAIIADAIIAFAHIAFAHIACAIIADAIIAFAHIACAHIADAIIADAHIAEAHIACAIIAAAIIAAAHIADAIIACAHIAIAHIADAIIACAIIAFAIIAFAHIADAHIAAAIIAAAHIACAIIADAIIAFAHIADAHIAFAIIACAHIAFAIIADAIIACAIIAAAHIAAAHIAFAIIADAIIAFAHIADAIIACAHIAFAHIAIAIIAFAIIACAHIADAIIAIAHIAHAHIAFAIIAFAIIADAIIACAHIgCAIIgFAHIgNAFIgPgCg");
+	this.shape.setTransform(31.175,150.05);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_1}]}).wait(1));
+	// maze
+	this.instance_2 = new lib.ScreenShot20210413at61823PM();
+	this.instance_2.setTransform(103,21);
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new lib.AnMovieClip();
+p.nominalBounds = new cjs.Rectangle(201.9,131.1,460.5,298.5);
+// library properties:
+lib.properties = {
+	id: '99774E75BB094A579016C716DF4ED397',
+	width: 550,
+	height: 400,
+	fps: 24,
+	color: "#FFFFFF",
+	opacity: 1.00,
+	manifest: [
+		{src:"images/CachedBmp_7.png", id:"CachedBmp_7"},
+		{src:"images/CachedBmp_6.png", id:"CachedBmp_6"},
+		{src:"images/maze_atlas_1.png", id:"maze_atlas_1"},
+		{src:"images/maze_atlas_2.png", id:"maze_atlas_2"},
+		{src:"images/maze_atlas_3.png", id:"maze_atlas_3"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['99774E75BB094A579016C716DF4ED397'] = {
+	getStage: function() { return exportRoot.stage; },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	var lastW, lastH, lastS=1;		
+	window.addEventListener('resize', resizeCanvas);		
+	resizeCanvas();		
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+		if(isResp) {                
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+				sRatio = lastS;                
+			}				
+			else if(!isScale) {					
+				if(iw<w || ih<h)						
+					sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==1) {					
+				sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==2) {					
+				sRatio = Math.max(xRatio, yRatio);				
+			}			
+		}
+		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].height = h * pRatio * sRatio;
+		domContainers.forEach(function(container) {				
+			container.style.width = w * sRatio + 'px';				
+			container.style.height = h * sRatio + 'px';			
+		});
+		stage.scaleX = pRatio*sRatio;			
+		stage.scaleY = pRatio*sRatio;
+		lastW = iw; lastH = ih; lastS = sRatio;            
+		stage.tickOnUpdate = false;            
+		stage.update();            
+		stage.tickOnUpdate = true;		
+	}
+}
+an.handleSoundStreamOnTick = function(event) {
+	if(!event.paused){
+		var stageChild = stage.getChildAt(0);
+		if(!stageChild.paused || stageChild.ignorePause){
+			stageChild.syncStreamSounds();
+		}
+	}
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
+</script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("99774E75BB094A579016C716DF4ED397");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.maze();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:550px; height:400px">
+		<canvas id="canvas" width="550" height="400" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+</body>
+</html>
