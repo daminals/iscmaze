@@ -1,5 +1,5 @@
 {
-  "name": "iscgame",
+  "name": "iscmaze",
   "version": "1.0.0",
   "engines": {
     "node": "12.9.1",
@@ -35,5 +35,5 @@
     "url": "https://github.com/daminals/iscmaze/issues"
   },
   "homepage": "https://github.com/daminals/iscmaze#readme",
-  "description": ""
+  "description": "internet safety themed maze game"
 }

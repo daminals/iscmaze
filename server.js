@@ -8,7 +8,6 @@ router.get('/',function(req,res){
   //__dirname : It will resolve to your project folder.
 });
 
-
 //add the router
 app.use(express.static(__dirname + '/static'));
 
