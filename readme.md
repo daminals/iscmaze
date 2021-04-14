@@ -4,6 +4,6 @@
 <img src="https://github.com/daminals/crylol/blob/master/static/cry.png">
 
 Adobe Animate HTML5 Canvas, 
-Utilizes button feature!
+A maze game with goals about interent safety!!
 
-https://crylol.herokuapp.com/
+https://isc-maze.herokuapp.com/
